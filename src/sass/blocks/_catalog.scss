@@ -1,0 +1,160 @@
+.catalog {
+    padding-bottom: 80px;
+    &__tabs {
+        margin-top: 46px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__tab {
+        width: 222px;
+        height: 52px;
+        color: #6B6B6B;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 48px;
+        text-transform: uppercase;
+        border: 2px solid #D0D0D0;
+        transform: skew(-25deg);
+        margin: 0 5px;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+        }
+        div {
+            transform: skew(25deg);
+        }
+        &_active {
+            color: #fff;
+            background-color: $main-color;
+            border: none;
+        }
+    }
+    &__content {
+        margin-top: 57px;
+        display: none;
+        gap: 10px;
+        flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
+    }
+    &-item {
+        width: 265px;
+        min-height: 400px;
+        border: 2px solid #E8E8E8;
+        padding: 20px 20px 21px 20px;
+        overflow: hidden;
+        &__img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: 200px;
+        }
+        &__subtitle {
+            color: #0D0D0D;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &__descr {
+            width: 250px;
+            color: #0D0D0D;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 300;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+        &__link {
+            display: block;
+            color: $main-color;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration-line: underline;
+            margin-top: 10px;
+        }
+        hr {
+            margin: 17px 0;
+            border-bottom: none;
+        }
+        &__footer {
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__old-price {
+            color: #555;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            text-decoration: line-through;
+        }
+        &__new-price {
+            color: #050505;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        &__wrapper {
+            width: calc(200% + 40px);
+            display: flex;
+            
+            
+        }
+        &__content {
+            width: 50%;
+            margin-right: 0px;
+            transition: 0.5s all;
+            transform: translateX(-100%);
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__list {
+            position: relative;
+            width: 50%;
+            margin-left: 20px;
+            transition: 0.5s all;
+            padding-left: 19px;
+            transform: translateX(0%);
+            &_active {
+                transform: translateX(-100%);
+                margin-right: 0px;
+            }
+            li { 
+                position: relative;
+                color: #555;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 21px;
+                margin-bottom: 10px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                    left: -14px;
+                    top: 7px;
+                }
+            }
+        }
+        &__back {
+            display: block;
+            color: $main-color;
+            position: absolute;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration-line: underline;
+            bottom: 0;
+            left: 50%;
+            transform: translatex(calc(-50% - 19px));
+        }
+
+    }
+}

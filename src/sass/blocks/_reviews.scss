@@ -1,0 +1,38 @@
+.reviews {
+    padding: 0 0 48px 0;
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        &__inner-box {
+            width: 680px;
+        }
+        &__img {
+            display: block;
+            height: 169px;
+            img {
+                width: 100%;
+            }
+        }
+        &__subtitle {
+            display: flex;
+            flex-direction: column;
+            color: #0D0D0D;
+            font-size: 18px;
+            font-weight: 700;
+            span {
+                color: #646464;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        &__descr {
+            margin-top: 10px;
+            color: #0D0D0D;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: left;
+        }
+    }
+}
