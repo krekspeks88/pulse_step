@@ -89,7 +89,7 @@ $(document).ready(function () {
 
   // mask form input phone
 
-  $('input[name=phone]').mask('+7 (000) 000-00-00');
+  $('input[name=phone]').mask('+38 (000) 000-00-00');
 
   $('form').submit(function (e) {
     e.preventDefault();
